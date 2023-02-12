@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Navigation() {
   return (
-    <nav className="bg-[#1C1C1C] p-3 rounded-xl flex font-sans items-center">
+    <nav className="bg-[#1C1C1C] pr-9 pl-9 pt-4 pb-4 rounded-xl flex font-roboto items-center mb-6">
       <Link href="/" className="w-1/3 text-left font-bold">
         Sarmad Ahmad
       </Link>
@@ -11,8 +11,8 @@ export default function Navigation() {
         <Link href="/about" className="w-1/3">
           About
         </Link>
-        <Link href="/blog" className="w-1/3">
-          Blog
+        <Link href="/blogs" className="w-1/3">
+          Blogs
         </Link>
         <Link href="https://github.com/SarmadAD" className="w-1/3" target="_blank">
           GitHub
