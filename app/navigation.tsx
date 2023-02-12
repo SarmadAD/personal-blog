@@ -12,7 +12,7 @@ export default function Navigation() {
           About
         </Link>
         <Link href="/blogs" className="w-1/3">
-          Blog
+          Blogs
         </Link>
         <Link href="https://github.com/SarmadAD" className="w-1/3" target="_blank">
           GitHub
