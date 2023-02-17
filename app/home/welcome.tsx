@@ -1,8 +1,23 @@
+"use client";
+import { motion } from "framer-motion";
 import React from "react";
 
 function Welcome() {
   return (
-    <div className="bg-[#1c1c1c] pr-9 pl-9 pt-4 pb-4 rounded-xl flex justify-between">
+    <motion.div
+      initial={{ opacity: 0, x: 20 }}
+      animate={{
+        opacity: 1,
+        x: 0,
+        transition: {
+          type: "spring",
+          stiffness: 150,
+          delay: 0.6,
+          duration: 3,
+        },
+      }}
+      className="bg-[#1c1c1c] pr-9 pl-9 pt-4 pb-4 rounded-xl flex justify-between"
+    >
       <div className="flex flex-col">
         <h1 className="text-7xl leading-tight mb-8">
           Welcome <br /> to my <br /> blog 👋🏾
@@ -20,7 +35,7 @@ function Welcome() {
         </div>
       </div>
       <div>{/* <Image src={profilePic} alt="Picture of author" width={350} height={300} className="rounded-xl" /> */}</div>
-    </div>
+    </motion.div>
   );
 }
 
