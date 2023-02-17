@@ -9,12 +9,13 @@ interface Props {
 }
 
 function TimeLineElement({ blogPost: { id, title, shortDescription, publishDate, image } }: Props) {
+  const date = new Date(publishDate);
+  const month = date.toLocaleString("default", { month: "short" });
   return (
     <VerticalTimelineElement
-      key={id}
       contentStyle={{ background: "#222222", color: "#fff", paddingLeft: "0", paddingTop: "0", paddingBottom: "0" }}
       contentArrowStyle={{ borderRight: "7px solid  #222222" }}
-      date={publishDate}
+      date={`${month} ${date.getFullYear()}`}
       iconStyle={{ background: "#222222", color: "#fff" }}
     >
       <Link href={`/blogs/${id}`}>

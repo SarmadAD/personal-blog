@@ -9,9 +9,11 @@ function TimeLine() {
   return (
     <div className="font-roboto">
       <VerticalTimeline>
-        {examplePosts.map((examplePost) => (
-          <TimeLineElement key={examplePost.id} blogPost={examplePost} />
-        ))}
+        {examplePosts
+          .sort((a, b) => Date.parse(b.publishDate) - Date.parse(a.publishDate))
+          .map((examplePost) => (
+            <TimeLineElement key={examplePost.id} blogPost={examplePost} />
+          ))}
       </VerticalTimeline>
     </div>
   );
