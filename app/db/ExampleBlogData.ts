@@ -62,4 +62,12 @@ export const examplePosts: BlogPostProps[] = [
     shortDescription: "New York: The city that never sleeps",
     image: trees,
   },
+  {
+    id: 8,
+    title: "Trees",
+    publishDate: "02/02/2023",
+    text: "New York City was a sight to behold, with towering skyscrapers and bustling streets. It was a city that never slept, and there was always something to do. I visited the Empire State Building, the Statue of Liberty, and Times Square, and they all lived up to their reputation. The energy of the city was contagious, and I felt alive with every step I took. I tried New York-style pizza and bagels, which were amazing. There were people from all walks of life, and it was a melting pot of cultures. It was the city that never slept, and I never wanted to leave. New York City was an experience I would never forget.",
+    shortDescription: "New York: The city that never sleeps",
+    image: trees,
+  },
 ];
