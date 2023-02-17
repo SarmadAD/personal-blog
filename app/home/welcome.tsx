@@ -2,7 +2,7 @@ import React from "react";
 
 function Welcome() {
   return (
-    <div className="bg-[#1C1C1C] pr-9 pl-9 pt-4 pb-4 rounded-xl flex justify-between">
+    <div className="bg-[#1c1c1c] pr-9 pl-9 pt-4 pb-4 rounded-xl flex justify-between">
       <div className="flex flex-col">
         <h1 className="text-7xl leading-tight mb-8">
           Welcome <br /> to my <br /> blog 👋🏾

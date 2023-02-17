@@ -3,18 +3,15 @@
 import React from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import { Engine } from "tsparticles-engine";
 
 function Particle() {
-  const particlesInit = async (main) => {
+  const particlesInit = async (main: Engine) => {
     await loadFull(main);
-  };
-  const particlesLoaded = (container) => {
-    console.log(container);
   };
   return (
     <Particles
       init={particlesInit}
-      loaded={particlesLoaded}
       options={{
         fullScreen: {
           enable: true,
