@@ -22,7 +22,7 @@ function Particle() {
         },
         particles: {
           number: {
-            value: 10,
+            value: 20,
             density: {
               enable: false,
               value_area: 800,
@@ -32,7 +32,7 @@ function Particle() {
             value: "#fff",
           },
           shape: {
-            type: "star",
+            type: "circle",
             options: {
               sides: 5,
             },
