@@ -20,7 +20,7 @@ function BlogPost({ params: { id } }: any) {
           duration: 3,
         },
       }}
-      className="font-roboto"
+      className="font-roboto border rounded-xl border-card-border-color"
     >
       <Image src={blogPost.image} alt="Blog Post Image" className="h-[500px] rounded-t-lg" />
       <div className="bg-[#222222] p-9 rounded-b-lg">

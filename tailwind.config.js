@@ -4,7 +4,11 @@ module.exports = {
     fontFamily: {
       roboto: ["Roboto", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      colors: {
+        "card-border-color": "var(--border-color)",
+      },
+    },
   },
   plugins: [],
 };
