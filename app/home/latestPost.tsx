@@ -9,7 +9,10 @@ interface Props {
 
 function LatestPost({ latestPostProps: { id, image, shortDescription, title } }: Props) {
   return (
-    <Link className="flex flex-col w-80 rounded-lg font-roboto bg-[#222222] shadow-md hover:shadow-xl" href={`/blogs/${id}`}>
+    <Link
+      className="flex flex-col w-80 rounded-lg font-roboto bg-[#222222] border border-card-border-color shadow-md hover:shadow-xl"
+      href={`/blogs/${id}`}
+    >
       <Image src={image} alt="Image of post" className="w-full mb-3 rounded-t-md max-h-[180px]" />
       <div className="pr-3 pl-3">
         <h3 className="text-base font-bold">{title}</h3>

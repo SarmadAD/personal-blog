@@ -13,7 +13,14 @@ function TimeLineElement({ blogPost: { id, title, shortDescription, publishDate,
   const month = date.toLocaleString("default", { month: "short" });
   return (
     <VerticalTimelineElement
-      contentStyle={{ background: "#222222", color: "#fff", paddingLeft: "0", paddingTop: "0", paddingBottom: "0" }}
+      contentStyle={{
+        background: "#222222",
+        color: "#fff",
+        paddingLeft: "0",
+        paddingTop: "0",
+        paddingBottom: "0",
+        border: "solid 1px var(--border-color)",
+      }}
       contentArrowStyle={{ borderRight: "7px solid  #222222" }}
       date={`${month} ${date.getFullYear()}`}
       iconStyle={{ background: "#222222", color: "#fff" }}

@@ -16,7 +16,7 @@ function Welcome() {
           duration: 3,
         },
       }}
-      className="bg-[#1c1c1c] pr-9 pl-9 pt-4 pb-4 rounded-xl flex justify-between"
+      className="bg-[#1c1c1c] pr-9 pl-9 pt-4 pb-4 rounded-xl flex justify-between border border-card-border-color"
     >
       <div className="flex flex-col">
         <h1 className="text-7xl leading-tight mb-8">

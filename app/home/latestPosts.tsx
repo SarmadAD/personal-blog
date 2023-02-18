@@ -36,7 +36,7 @@ export default function LatestPosts() {
           duration: 3,
         },
       }}
-      className="bg-[#1C1C1C] pr-9 pl-9 pt-4 pb-4 rounded-xl"
+      className="bg-[#1C1C1C] pr-8 pl-9 pt-4 pb-4 rounded-xl border border-[#6a666669]"
     >
       <h1 className="text-4xl font-roboto mb-6">Latest posts</h1>
       <div className="flex flex-wrap gap-[3.7em]">
