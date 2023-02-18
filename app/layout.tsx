@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import Particle from "./components/Particle";
 import Footer from "./footer";
 import Navigation from "./navigation";
 
@@ -12,6 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
           <Footer />
         </main>
+        <Particle />
       </body>
     </html>
   );

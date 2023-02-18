@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import React from "react";
 import { examplePosts } from "../db/ExampleBlogData";
 import LatestPost from "./latestPost";
@@ -21,7 +24,20 @@ export default function LatestPosts() {
   }
 
   return (
-    <div className="bg-[#1C1C1C] pr-9 pl-9 pt-4 pb-4 rounded-xl">
+    <motion.div
+      initial={{ opacity: 0, x: 20 }}
+      animate={{
+        opacity: 1,
+        x: 0,
+        transition: {
+          type: "spring",
+          stiffness: 150,
+          delay: 0.9,
+          duration: 3,
+        },
+      }}
+      className="bg-[#1C1C1C] pr-9 pl-9 pt-4 pb-4 rounded-xl"
+    >
       <h1 className="text-4xl font-roboto mb-6">Latest posts</h1>
       <div className="flex flex-wrap gap-[3.7em]">
         {latestsPosts.length > 0 ? (
@@ -30,6 +46,6 @@ export default function LatestPosts() {
           <h2>No blog posts published lately.</h2>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 }
