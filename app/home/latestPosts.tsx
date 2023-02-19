@@ -2,12 +2,12 @@
 
 import { motion } from "framer-motion";
 import React from "react";
-import { examplePosts } from "../db/ExampleBlogData";
+import useBlogStore from "../store/store";
 import LatestPost from "./latestPost";
 
 export default function LatestPosts() {
   const getDaysInMonth = (year: number, month: number) => new Date(year, month, 0).getDate();
-  const latestsPosts = examplePosts.filter((examplePost) => {
+  const latestsPosts = useBlogStore((state) => state.blogPosts).filter((examplePost) => {
     const date = new Date(examplePost.publishDate);
     const localTime = date.toLocaleString("default");
     if (new Date(localTime) >= addMonths(new Date(), -3) && new Date(localTime) <= new Date()) {
