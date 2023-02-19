@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
-import { examplePosts } from "../../db/ExampleBlogData";
+import useBlogStore from "../../store/store";
 
 function BlogPost({ params: { id } }: any) {
-  const blogPost = examplePosts.find((examplePost) => examplePost.id === parseInt(id));
+  const blogPost = useBlogStore((state) => state.getBlogPost(id));
   return (
     <motion.div
       initial={{ opacity: 0, x: 20 }}
